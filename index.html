@@ -1,0 +1,95 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>criptografia com cifra de Cezar e Base64</title>
+    
+  </head>
+
+  <body>
+    <section> 
+    <div class="topo">
+      <header>
+        <h1>Cifra de Cesar & Base64</h1>
+        <br>
+        <br>
+        <h2>Codificação e Decodificação</h2>
+    
+      </header>
+      <main>
+        <form>
+          <label for="mensagem">Digite aqui a mensagem </label>
+          <textarea
+            cols="60"
+            rows="5"
+            id="mensagem"
+            class="input-padrao"
+            required
+          ></textarea>
+</section>
+          <fieldset>
+            <legend>Codificar com:</legend>
+            <select id="selecao">
+              <option value="selecione">Selecione</option>
+              <option value="cesar">Cifra de César</option>
+              <option value="bs64">Base64</option>
+            </select>
+
+            <div class="passo">
+              <label for="passo"> Escolha o incremento:</label>
+              <input
+                type="number"
+                name="passo"
+                min="1"
+                max="25"
+                id="escolha-passo"
+                checked
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="radio-codificar"
+              ><input
+                type="radio"
+                value="codificar"
+                name="code"
+                id="radio-codificar"
+                checked/> Codificar </label>
+
+            <label for="radio-decodificar"
+              ><input
+                type="radio"
+                value="decodificar"
+                name="code"
+                id="radio-decodificar"/> Decodificar </label>
+          </fieldset>
+
+          <button class="botao"> Prosseguir </button>
+          <label for="Mensagem"> Resultado </label>
+          <textarea
+            cols="60"
+            rows="5"
+            id="mensagemFinal"
+            class="input-padrao"
+          ></textarea>
+
+        </form>
+      </main>
+    </div>  
+    
+
+    <footer>
+ <h2> Diego Bezerra</h2>
+      <p> Trabalho individual modulo 2</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+  </body>
+
+
+</html>
